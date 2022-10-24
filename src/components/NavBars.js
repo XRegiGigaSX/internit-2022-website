@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const NavBars = () => {
   return (
@@ -16,25 +17,21 @@ const NavBars = () => {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-5 mb-2 mb-lg-0 ms-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <Link class="nav-link active" aria-current="page" to="/">Home</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <Link class="nav-link" to="far">Fixtures & Results</Link>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"/></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
+          <Link class="nav-link" to="stats">
+            Stats
+          </Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
+          <a class="nav-link" href='#'>Rules & Guidelines</a>
         </li>
+        <li className='nav-item'><Link className='nav-link' to='sponsors'>Sponsors</Link></li>
+        <li className='nav-item'><Link className='nav-link' to='team'>Team</Link></li>
       </ul>
     </div>
   </div>
