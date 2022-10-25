@@ -1,0 +1,227 @@
+/* Rayyan Styling starts  */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+.App {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scores {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score-container {
+    position: relative;
+    margin-top: 40px;
+    height: 148px;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E1E1E1;
+}
+
+.match-title {
+    font-family: "Roboto Condensed";
+    width: 30%;
+    position: absolute;
+    top: -27px;
+    left: 35%;
+    z-index: 1;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color: red;
+    font-weight: bold;
+    font-size: 1.35em;
+    color: white;
+    font-family: sans-serif;
+}
+
+.match-details {
+    font-family: "Roboto Condensed";
+    font-size: 1.15em;
+    font-weight: bold;
+    color: #19204E;
+    position: absolute;
+    top: -1.7em;
+    left: 0;
+}
+
+.team1 {
+    font-family: "Roboto Condensed";
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+    width: 37.5%;
+}
+
+.team2 {
+    font-family: "Roboto Condensed";
+    display: flex;
+    justify-content: flex-start;
+    font-weight: bold;
+    width: 37.5%;
+    text-align: left;
+}
+
+.score-box {
+    font-family: "Roboto Condensed";
+    font-weight: bold;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vs {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.score {
+    padding: 1em;
+    font-size: 2em;
+}
+
+.team-name1 {
+    font-weight: bold;
+    font-size: 1.4em;
+    margin: auto 1em auto 0;
+}
+
+.team-name2 {
+    font-weight: bold;
+    font-size: 1.4em;
+    margin: auto 0 auto 1em;
+}
+
+.team-logo {
+    height: 3em;
+    width: 3em;
+    clip-path: circle();
+
+}
+
+.sport-categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 15vh;
+    width: 80%;
+
+}
+
+.sport-cat-container {
+    font-family: "Roboto Condensed";
+    font-weight: bold;
+    font-size: 1.2em;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+
+}
+
+.sport-cat-container li {
+    font-size: 1.5em;
+    color: #E1E1E1;
+    font-weight: bold;
+    list-style: none;
+}
+
+.sport-cat-container li:hover {
+    text-decoration: underline;
+    color: darkblue;
+}
+
+.sport-cat-container li button:focus {
+    text-decoration: underline;
+    color: darkblue;
+}
+
+.sort-cat {
+    margin: 0 auto 50px auto;
+    width: 85%;
+}
+
+.sort-cat span {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* .sortBy {
+    background-color: #19204E;;
+    padding: 0.9em 0.5em 1em 0.5em;
+    color: white;
+}
+
+.sortBy option div{
+    padding: 30px;
+    border-radius: none;
+} */
+
+/* Style The Dropdown Button */
+.dropbtn {
+    width: 176px;
+    height: 50px;
+    background-color: #19204E;
+    color: white;
+    padding: 16px 16px 46\0px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    width: 176px;
+    height: 50px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: #19204E;
+    border-bottom: 1px solid white;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+}
+
+.dropdown-content:hover {
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #19204E;
+}
+
+/* Rayyan Styling ends */
