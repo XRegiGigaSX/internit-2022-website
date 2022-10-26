@@ -140,7 +140,12 @@
     color: darkblue;
 }
 
-.sport-cat-container li button:focus {
+.sport-cat-container li:focus {
+    text-decoration: underline;
+    color: darkblue;
+}
+
+.sport-cat-container li:active {
     text-decoration: underline;
     color: darkblue;
 }
