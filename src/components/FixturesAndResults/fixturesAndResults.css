@@ -1,6 +1,7 @@
 /* Rayyan Styling starts  */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
 
 .App {
     text-align: center;
@@ -10,16 +11,24 @@
 }
 
 .scores {
+    /* position: relative; */
+    max-height: 70vh;
+    margin-top: 50px;
     text-align: center;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    
+    justify-content: space-between;
     align-items: center;
+    overflow-y: auto;
 }
 
 .score-container {
     position: relative;
-    margin-top: 40px;
-    height: 148px;
+    /* margin-top: 40px; */
+    /* margin-top: 88px; */
+    margin: 40px 0;
+    min-height: 148px !important;
     width: 85%;
     display: flex;
     justify-content: center;
@@ -29,14 +38,15 @@
 
 .match-title {
     font-family: "Roboto Condensed";
-    width: 30%;
+    width: 27.5%;
+    /* height: 60px; */
     position: absolute;
     top: -27px;
-    left: 35%;
+    left: 36.25%;
     z-index: 1;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    background-color: red;
+    background-color: #E73725;
     font-weight: bold;
     font-size: 1.35em;
     color: white;
@@ -71,22 +81,24 @@
 }
 
 .score-box {
-    font-family: "Roboto Condensed";
     font-weight: bold;
     width: 20%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .vs {
-    font-size: 1em;
+    font-family: "Roboto Condensed";
+    font-size: 1.2em;
     font-weight: bold;
 }
 
 .score {
-    padding: 1em;
+    font-family: 'Oswald';
+    padding: 0.8em;
     font-size: 2em;
+    font-weight: bold;
 }
 
 .team-name1 {
@@ -102,14 +114,16 @@
 }
 
 .team-logo {
-    height: 3em;
-    width: 3em;
+    height: 4.5em;
+    width: 4.5em;
     clip-path: circle();
 
 }
 
 .sport-categories {
+    font-family: 'Oswald', sans-serif;
     display: flex;
+
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -119,7 +133,7 @@
 }
 
 .sport-cat-container {
-    font-family: "Roboto Condensed";
+    /* font-family: "Roboto Condensed"; */
     font-weight: bold;
     font-size: 1.2em;
     display: flex;
@@ -130,14 +144,14 @@
 
 .sport-cat-container li {
     font-size: 1.5em;
-    color: #E1E1E1;
+    color: #878787;
     font-weight: bold;
     list-style: none;
 }
 
 .sport-cat-container li:hover {
     text-decoration: underline;
-    color: darkblue;
+    color: #19204E;
 }
 
 .sport-cat-container li:focus {
@@ -151,7 +165,7 @@
 }
 
 .sort-cat {
-    margin: 0 auto 50px auto;
+    margin: 0 auto 0 auto;
     width: 85%;
 }
 
@@ -160,29 +174,38 @@
     font-size: 1.1em;
 }
 
-/* .sortBy {
-    background-color: #19204E;;
-    padding: 0.9em 0.5em 1em 0.5em;
-    color: white;
-}
-
-.sortBy option div{
-    padding: 30px;
-    border-radius: none;
-} */
-
 /* Style The Dropdown Button */
 .dropbtn {
+    font-family: "Roboto Condensed";
     width: 176px;
     height: 50px;
     background-color: #19204E;
     color: white;
     padding: 16px 16px 46\0px 16px;
-    font-size: 16px;
+    font-size: 1.2em;
     border: none;
     cursor: pointer;
     border-bottom: 1px solid white;
 }
+
+.sort-by{
+    font-family: "Roboto Condensed";
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* .dropbtn:hover{
+    transform: rotate(90deg);
+} */
+
+/* .dropbtn img{
+    animation: rotate;
+} */
+
+/* @keyframes rotate {
+    100%{transform: rotate(90deg);}
+    
+} */
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
@@ -192,6 +215,8 @@
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
+    font-family: "Roboto Condensed";
+    text-align: center;
     width: 176px;
     height: 50px;
     display: none;
@@ -213,11 +238,11 @@
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {
+/* .dropdown-content a:hover {
 }
 
 .dropdown-content:hover {
-}
+} */
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -227,6 +252,16 @@
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
     background-color: #19204E;
+}
+
+.add-info{
+    font-family: "Roboto Condensed";
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 20%;
+    position: absolute;
+    bottom: 7%;
+    left: 40%;
 }
 
 /* Rayyan Styling ends */

@@ -30,6 +30,9 @@ const ScoreCard = ({color}) => {
             <img src="https://picsum.photos/200" alt="team-logo" className="team-logo" />      
             <span className="team-name2">NIT Meghalaya</span>         
         </div>
+        <div className="add-info">
+            Base of 3
+        </div>
     </div>
   )
 }

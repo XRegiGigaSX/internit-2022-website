@@ -12,7 +12,7 @@ export default function FixturesAndResults() {
                 </ul>
             </div>
             <div className="sort-cat">
-                <span>Sort by : </span>
+                <span className="sort-by">Sort by : &#12644;&#12644;&#12644;</span>
                 {/* <span className="dropdown">
                     <button className="sortBy">
                         Dropdown
@@ -31,6 +31,18 @@ export default function FixturesAndResults() {
                 </div>
             </div>
             <div className="scores">
+                <ScoreCard
+                    color="darkgray"
+                />
+                <ScoreCard
+                    color="red"
+                />
+                <ScoreCard
+                    color="red"
+                />
+                <ScoreCard
+                    color="red"
+                />
                 <ScoreCard
                     color="red"
                 />
